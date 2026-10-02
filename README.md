@@ -38,7 +38,7 @@ Le titre remplace celui généré par l'app
   - Les conversations de l'onglet **Chat** tournent sur les serveurs de claude.ai : elles ne lisent pas `settings.json` et n'exécutent pas de hooks. Il n'existe aucun moyen officiel d'automatiser leurs titres.
   - Les sessions Code lancées depuis le téléphone ou claude.ai/code tournent dans le cloud, sans vos hooks locaux.
 - **Pas garanti à 100 % :** le hook donne une consigne et c'est Claude qui l'exécute. Il peut l'oublier de temps en temps.
-- **Mode plan :** l'appel de renommage déclenche une demande d'autorisation. Le repo compagnon [claude-code-plan-mode-auto-reads](https://github.com/Matthieusabourin2/claude-code-plan-mode-auto-reads) l'approuve automatiquement.
+- **Mode plan :** l'appel de renommage déclenche une demande d'autorisation. Le repo compagnon [claude-code-plan-mode-no-prompts](https://github.com/Matthieusabourin2/claude-code-plan-mode-no-prompts) supprime toutes les demandes en mode plan.
 - **Format interne :** la détection des sessions reprises lit le transcript `.jsonl` de Claude Code, dont le format n'est pas documenté. Si le format change, le pire cas est que les anciennes sessions reprises soient renommées.
 
 ## 3. Comment l'utiliser
